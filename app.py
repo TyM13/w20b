@@ -16,7 +16,7 @@ def get_animals():
 #returns the variable animals_json
         return animals_json
     else:
-        return 'sorry'
+        return 'sorry something unexpected has happened'
 
 
 @app.get('/dogs')
@@ -30,7 +30,7 @@ def get_dogs():
         #returns the variable dogs_json
         return dogs_json
     else:
-        return 'sorry'
+        return 'sorry something unexpected has happened'
 
 
 @app.get('/cats')
@@ -44,6 +44,6 @@ def get_cats():
          #returns the variable cats_json
         return cats_json
     else:
-        return 'sorry'
+        return 'sorry something unexpected has happened'
 
 app.run(debug=True)
